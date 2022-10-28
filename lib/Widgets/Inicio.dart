@@ -38,7 +38,7 @@ class _PrincipalState extends State<Principal> {
               width: 200.0,
               child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/frmregistroDS');
+                    Navigator.pushNamed(context, '/frmRegistroDS');
                   },
                   child: const Text("Diseño del registro")),
             ),

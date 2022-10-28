@@ -11,7 +11,6 @@ class TransaccionesBD {
       Password TEXT NOT NULL,
       FechaRegistro TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
     )
-  
   """);
   }
 
@@ -27,7 +26,7 @@ class TransaccionesBD {
     final c = await DB();
     final datos = {
       'Nombre': nombre,
-      'Apeliidos': apellido,
+      'Apeliido': apellido,
       'Correo': correo,
       'Password': password
     };
@@ -39,7 +38,7 @@ class TransaccionesBD {
   static Future<int> EditUsuario(
       int id, String nombre, String apellido, String correo) async {
     final c = await DB();
-    final datos = {'Nombre': nombre, 'Apeliidos': apellido, 'Correo': correo};
+    final datos = {'Nombre': nombre, 'Apeliido': apellido, 'Correo': correo};
 
     final r =
         await c.update('Usuarios', datos, where: "Id = ?", whereArgs: [id]);

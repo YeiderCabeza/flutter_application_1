@@ -32,7 +32,7 @@ class _frmRegistroDSState extends State<frmRegistroDS> {
                     children: [
                       RichText(
                         text: const TextSpan(
-                          text: "Bienvenido a",
+                          text: "Bienvenido a ",
                           style: TextStyle(
                             color: Colors.yellow,
                             fontSize: 25,
