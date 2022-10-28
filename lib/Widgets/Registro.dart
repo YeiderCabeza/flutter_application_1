@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../DataBase/Transacciones.dart';
 
 class Registro extends StatefulWidget {
-  const Registro({super.key});
+  const Registro({Key? key});
 
   @override
   State<Registro> createState() => _RegistroState();
@@ -47,7 +47,7 @@ class _RegistroState extends State<Registro> {
       child: TextField(
         controller: cNombre,
         decoration: const InputDecoration(
-            border: OutlineInputBorder(), label: Text("digite cantidad")),
+            border: OutlineInputBorder(), label: Text("Digite Nombre")),
       ),
     );
   }
@@ -58,7 +58,7 @@ class _RegistroState extends State<Registro> {
       child: TextField(
         controller: cApellido,
         decoration: const InputDecoration(
-            border: OutlineInputBorder(), label: Text("digite precio")),
+            border: OutlineInputBorder(), label: Text("Digite Apellido")),
       ),
     );
   }
@@ -69,7 +69,7 @@ class _RegistroState extends State<Registro> {
       child: TextField(
         controller: cCorreo,
         decoration: const InputDecoration(
-            border: OutlineInputBorder(), label: Text("digite precio")),
+            border: OutlineInputBorder(), label: Text("Digite Correo")),
       ),
     );
   }
@@ -81,7 +81,7 @@ class _RegistroState extends State<Registro> {
         controller: cPassword,
         keyboardType: TextInputType.visiblePassword,
         decoration: const InputDecoration(
-            border: OutlineInputBorder(), label: Text("digite Contraseña")),
+            border: OutlineInputBorder(), label: Text("Digite Contraseña")),
       ),
     );
   }

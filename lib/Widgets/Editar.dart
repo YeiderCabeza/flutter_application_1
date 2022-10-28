@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../DataBase/Transacciones.dart';
 
 class EditarUsuario extends StatefulWidget {
-  const EditarUsuario({super.key});
+  const EditarUsuario({Key? key});
 
   @override
   State<EditarUsuario> createState() => _EditarUsuarioState();

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'dart:ffi';
 import '../DataBase/Transacciones.dart';
 
 class ListUsuarios extends StatefulWidget {
-  const ListUsuarios({super.key});
+  const ListUsuarios({Key? key});
 
   @override
   State<ListUsuarios> createState() => ListUsuariosState();
